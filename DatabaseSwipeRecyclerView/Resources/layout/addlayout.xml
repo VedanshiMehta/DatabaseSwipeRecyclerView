@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:id="@+id/toolbarInsert"
+        app:title="Add Student Details"
+        app:titleTextColor="#ffffff"
+        android:background="#5b3256"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textViewStudentName"/>
+
+    
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewStudentName"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarInsert"
+        android:text="Student Name: "
+        android:textSize="20sp"
+    
+        app:layout_constraintHorizontal_bias="0.0"
+        android:textAlignment="viewStart"
+        android:textColor="#5b3256"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewDateOfBirth"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editTextStudentName"/>
+    <EditText
+        android:layout_width="0.0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextStudentName"
+        android:backgroundTint="#5b3256"
+            android:inputType="text"
+        android:imeOptions="actionNext"
+        app:layout_constraintStart_toEndOf="@+id/textViewStudentName"
+        app:layout_constraintTop_toTopOf="@+id/textViewStudentName"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewStudentName"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+   <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewDateOfBirth"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStudentName"
+        android:text="Date Of Birth: "
+        android:textSize="20sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:textAlignment="viewStart"
+        android:textColor="#5b3256"
+            android:inputType="text"
+        android:imeOptions="actionNext"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewEmergencyContact"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editTextStudentName"/>
+
+    <EditText
+        android:layout_width="0.0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextDateOfBirth"
+        android:backgroundTint="#5b3256"
+        app:layout_constraintStart_toEndOf="@+id/textViewDateOfBirth"
+        app:layout_constraintTop_toTopOf="@+id/textViewDateOfBirth"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewDateOfBirth"
+        app:layout_constraintEnd_toEndOf="parent"/>
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewEmergencyContact"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDateOfBirth"
+        android:text="Emergency Contact: "
+        android:textSize="20sp"
+            android:inputType="number"
+        android:imeOptions="actionNext"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:textAlignment="viewStart"
+        android:textColor="#5b3256"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/materialButtonAdd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editTextEmergencyContact"/>
+
+    <EditText
+        android:layout_width="0.0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextEmergencyContact"
+        android:backgroundTint="#5b3256"
+        app:layout_constraintStart_toEndOf="@+id/textViewEmergencyContact"
+        app:layout_constraintTop_toTopOf="@+id/textViewEmergencyContact"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewEmergencyContact"
+        app:layout_constraintEnd_toEndOf="parent"/>
+<com.google.android.material.button.MaterialButton
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:id="@+id/materialButtonAdd"
+        android:backgroundTint="#5b3256"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEmergencyContact"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginHorizontal="20dp"
+        app:cornerRadius="10dp"
+        android:text="Add"
+        android:padding="15dp"
+        android:textAllCaps="false"
+        android:textSize="17sp"/>
+</androidx.constraintlayout.widget.ConstraintLayout >

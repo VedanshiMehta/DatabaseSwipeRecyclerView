@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    app:strokeColor="#5b3256"
+    app:strokeWidth="2dp"
+    android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewStudentName"
+            android:textSize="18sp"
+            android:textColor="#5b3256"
+            android:textStyle="bold"/>
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewDateOfBirth"
+            android:textSize="14sp"
+            android:textColor="#5b3256"/>
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewEmergencyContact"
+            android:textSize="14sp"
+            android:textColor="#5b3256"/>
+    </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
